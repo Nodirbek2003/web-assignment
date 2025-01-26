@@ -1,0 +1,781 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Quicksand:wght@400;500;600;700&family=Roboto:wght@400;500;700;900&display=swap");
+
+body {
+  /* overflow: hidden; */
+  font-family: Arial, Helvetica, sans-serif;
+}
+button {
+  padding: 12px 24px;
+  background-color: hsla(157, 100%, 34%, 1);
+  border-radius: 4px;
+  border: none;
+  font-size: 16px;
+  transition: all 0.3s linear;
+}
+.menu {
+  display: none;
+}
+button:hover {
+  background-color: orange;
+  transform: scale(1.1);
+  cursor: pointer;
+}
+a {
+  color: #fff;
+  text-decoration: none;
+  transition: all 0.3s linear;
+}
+a:hover {
+  opacity: 0.5;
+}
+.main_section {
+  display: flex;
+  flex-direction: column;
+  background-image: url("./img/bgss.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  height: 100vh;
+  .nav {
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #0000005f;
+    padding: 10px 80px;
+    position: fixed;
+    z-index: 10;
+    width: 1085px;
+    h2 {
+      font-size: 24px;
+    }
+    ul {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 40px;
+      list-style: none;
+      font-size: 16px;
+      a {
+        color: #fff;
+        /* text-decoration: none; */
+      }
+      i {
+        color: #fff;
+        font-size: 20px;
+      }
+    }
+    .btn {
+      display: flex;
+      gap: 20px;
+    }
+  }
+  .main_text {
+    margin: 40px 70px;
+    h1 {
+      font-size: 50px;
+      margin-top: 100px;
+      font-weight: 900;
+    }
+    p {
+      font-size: 25px;
+      color: #fff;
+    }
+  }
+}
+
+.WhyChoose {
+  padding: 112px 0px;
+  .textss {
+    font-size: 3rem;
+    text-align: center;
+  }
+  .WhyChoose_contents {
+    display: flex;
+    /* justify-content: center;  */
+    margin: 0 70px;
+    gap: 60px;
+    .contents {
+      width: 400px;
+      padding: 20px;
+      border: 1px solid #000;
+      border-radius: 15px;
+      transition: all 0.3s linear;
+    }
+    .contents:hover {
+      border: 0;
+      transform: translateY(-10px);
+      transform: scale(1.1);
+      box-shadow: 0px 0px 10px -1px rgba(3, 0, 3, 1);
+    }
+    img {
+      width: 100%;
+      border-radius: 15px;
+    }
+    h2 {
+      padding: 24px;
+      font-size: 26px;
+      text-align: center;
+    }
+    p {
+      line-height: 25px;
+      color: #0000007e;
+    }
+  }
+}
+
+.our_mission {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #27282c;
+  color: #fff;
+  padding: 40px 70px;
+
+  div {
+    img {
+      width: 555px;
+      border-radius: 30px;
+      transition: all 0.3s linear;
+    }
+    img:hover {
+      transform: scale(1.1);
+    }
+  }
+  .text_our_mission {
+    width: 450px;
+    h2 {
+      font-size: 40px;
+      line-height: 63px;
+    }
+    p {
+      margin: 15px 0;
+      font-size: 16px;
+      line-height: 28px;
+    }
+  }
+}
+
+.our_memberships {
+  text-align: center;
+  h2 {
+    font-size: 50px;
+    margin-top: 60px;
+  }
+  .our_memberships_content_top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 40px 70px;
+    gap: 50px;
+    .content_top {
+      border-radius: 4px;
+      width: 300px;
+      border-radius: 15px;
+      height: auto;
+      transition: all 0.3s linear;
+      padding: 10px;
+      border: 1px solid #000;
+      img {
+        width: 100%;
+        border-radius: 15px;
+        transition: all 0.3s ease;
+      }
+      ul {
+        line-height: 30px;
+        font-weight: 600;
+        list-style: none;
+      }
+      button {
+        color: white;
+      }
+    }
+    .content_top:hover {
+      transform: translateY(-15px);
+      box-shadow: 0px 0px 10px -1px rgba(3, 0, 3, 1);
+      border: 0;
+    }
+  }
+}
+
+.everything {
+  text-align: center;
+  h2 {
+    text-align: center;
+    font-size: 50px;
+    padding: 50px;
+  }
+  .icon_everything {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 50px;
+    .icon_cont {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      border: 1px solid #000;
+      width: 300px;
+      height: 300px;
+      padding: 20px;
+      border-radius: 15px;
+      transition: all 0.5s ease;
+      i {
+        font-size: 100px;
+      }
+      p {
+        font-size: 24px;
+        text-align: center;
+      }
+    }
+    .icon_cont:hover {
+      background: #000;
+      color: #fff;
+      border: solid #000;
+      transform: translateY(-10px);
+      box-shadow: 0px 0px 10px -1px rgba(3, 0, 3, 1);
+    }
+  }
+}
+
+.mijozlarimizdan {
+  h2 {
+    font-size: 50px;
+    text-align: center;
+  }
+  .mijozlarimizdan_content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 40px 70px;
+    gap: 60px;
+    .content_mijoz {
+      text-align: center;
+      border: 1px solid #000;
+      padding: 25px;
+      width: 300px;
+      height: 200px;
+      transition: all 0.3s linear;
+      font-size: 14px;
+      border-radius: 15px;
+      gap: 20px;
+      div {
+        img {
+          width: 50px;
+          object-fit: cover;
+          height: 50px;
+          border-radius: 50%;
+        }
+      }
+      .text_mijozlar {
+        max-width: 500px;
+        p {
+          margin-bottom: 20px;
+        }
+      }
+    }
+    .content_mijoz:hover {
+      transform: scale(1.1);
+    }
+  }
+}
+
+.contact {
+  display: flex;
+  gap: 30px;
+  margin-bottom: 50px;
+  margin: 112px 70px;
+  img {
+    width: 555px;
+    height: 555px;
+    border-radius: 30px;
+    object-fit: cover;
+  }
+  h2 {
+    font-size: 25px;
+    margin-bottom: 10px;
+  }
+  p {
+    font-size: 14px !important;
+  }
+  .form_contact {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    .form_top {
+      display: flex;
+      justify-content: start;
+      gap: 15px;
+      width: auto !important;
+      .full_name {
+        input {
+          width: 150px;
+          padding: 6px 80px 6px 12px;
+        }
+      }
+      .email {
+        gap: 6px;
+        input {
+          width: 150px;
+          padding: 6px 80px 6px 12px;
+        }
+      }
+    }
+    .form_middle {
+      display: flex;
+      justify-content: start;
+      gap: 15px;
+      .company_name {
+        display: flex;
+        flex-direction: column;
+        gap: 6px;
+        input {
+          width: 150px;
+
+          padding: 6px 80px 6px 12px;
+        }
+      }
+      .phone_number {
+        display: flex;
+        flex-direction: column;
+        gap: 6px;
+        input {
+          width: 150px;
+
+          padding: 6px 80px 6px 12px;
+        }
+      }
+    }
+    .form_bottom {
+      display: flex;
+      justify-content: start;
+      gap: 15px;
+      .data_start {
+        display: flex;
+        flex-direction: column;
+        gap: 6px;
+        input {
+          width: 150px !important;
+          padding: 6px 12px;
+          width: 260px;
+        }
+      }
+      .data_end {
+        display: flex;
+        flex-direction: column;
+        gap: 6px;
+        input {
+          width: 150px !important;
+          padding: 6px 12px;
+          width: 260px;
+        }
+      }
+    }
+  }
+  p {
+    margin: 25px 0;
+    line-height: 28px;
+    font-size: 20px;
+    max-width: 700px;
+    display: inline;
+  }
+  button {
+    color: #fff;
+  }
+  .form_chekbox {
+    input {
+      width: 20px;
+      height: 20px;
+    }
+  }
+}
+
+/* Footer Styles */
+footer {
+  background: #222;
+  color: white;
+  text-align: center;
+  padding: 4rem 5% 2rem;
+}
+
+@media (max-width: 1040px) {
+  .main_section {
+    height: 85vh;
+    .nav {
+      padding: 20px 20px;
+      ul {
+        gap: 20px;
+        .Membership {
+          display: none;
+        }
+      }
+      .btn {
+        gap: 5px;
+        .signUp {
+          display: none;
+        }
+      }
+    }
+    .main_text {
+      margin: 100px 150px;
+      p {
+        font-size: 20px;
+      }
+    }
+  }
+  .WhyChoose {
+    padding: 0;
+    margin: 0px 0px 100px;
+    .textss {
+      margin: 112px 0px 80px;
+    }
+    .WhyChoose_contents {
+      flex-direction: column;
+      align-items: center;
+      gap: 60px;
+      .contents {
+        width: 705px;
+        .color {
+          top: 80px;
+          right: 320px;
+        }
+        .greens {
+          position: absolute;
+          top: 79px;
+          right: 340px;
+        }
+        .greenss {
+          position: relative;
+          top: 50%;
+        }
+        h2 {
+          padding: 24px;
+          font-size: 42px;
+        }
+        p {
+          font-size: 24px;
+          line-height: 35px;
+        }
+      }
+    }
+  }
+  .our_mission {
+    flex-direction: column;
+    .text_our_mission {
+      margin: 50px;
+      h2 {
+        font-size: 70px;
+      }
+      p {
+        font-size: 28px;
+        line-height: 38px;
+      }
+    }
+  }
+  .our_memberships {
+    gap: 50px;
+    .our_memberships_content_top {
+      .content_top {
+        width: 300px;
+        height: 400px;
+        img {
+          width: 260px;
+        }
+        h3 {
+          font-size: 28px;
+        }
+        p {
+          padding: 20px;
+        }
+      }
+    }
+  }
+  .contact {
+    flex-direction: column;
+    padding: 20px;
+    margin: 170px 0px;
+    .form_contact {
+      padding: 0px 150px 0px 0px;
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .menu {
+    display: block;
+  }
+  .main_section {
+    height: 70vh;
+    .nav {
+      padding: 10px 10px;
+      h2 {
+        font-size: 16px;
+      }
+      ul {
+        a {
+          display: none;
+        }
+      }
+      figure {
+        display: block;
+      }
+      .btn {
+        display: none;
+      }
+    }
+    .main_text {
+      margin: 40px 30px;
+      h1 {
+        font-size: 40px;
+      }
+      p {
+        font-size: 16px;
+      }
+    }
+  }
+  .WhyChoose {
+    flex-direction: column;
+    padding: 0;
+    .textss {
+      margin: 50px;
+      text-align: center;
+      font-size: 30px;
+    }
+    .WhyChoose_contents {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      gap: 50px;
+      margin: 30px;
+      .contents {
+        width: 300px;
+        padding: 40px 20px;
+        .color {
+          position: absolute;
+          top: 40px;
+          right: 123px;
+        }
+        .greens {
+          position: absolute;
+          top: 40px;
+          right: 130px;
+        }
+        .greenss {
+          position: relative;
+          top: 50%;
+        }
+        h2 {
+          padding: 24px;
+          font-size: 20px;
+        }
+        p {
+          font-size: 16px;
+          line-height: 24px;
+        }
+      }
+    }
+  }
+  .our_mission {
+    flex-direction: column;
+    .text_our_mission {
+      margin: 40px;
+      h2 {
+        font-size: 36px;
+        line-height: 45px;
+        margin: 0px;
+      }
+      p {
+        margin: 32px;
+        font-size: 14px;
+        line-height: 20px;
+        letter-spacing: 1px;
+        margin-left: 0;
+      }
+    }
+  }
+  .our_memberships {
+    gap: 50px;
+    h2 {
+      font-size: 40px;
+      margin-top: 50px;
+    }
+    .our_memberships_content_top {
+      gap: 20px;
+      .content_top {
+        width: 320px;
+        height: 460px;
+        img {
+          width: 300px;
+        }
+      }
+    }
+  }
+  .everything {
+    gap: 10px;
+    h2 {
+      font-size: 40px;
+    }
+    .icon_everything {
+      gap: 20px;
+      .icon_cont {
+        width: 150px;
+        height: 150px;
+        padding: 20px;
+        i {
+          font-size: 70px;
+        }
+        p {
+          font-size: 16px;
+        }
+      }
+    }
+  }
+  .mijozlarimizdan {
+    h2 {
+      font-size: 40px;
+    }
+    .mijozlarimizdan_content {
+      gap: 30px;
+      .content_mijoz {
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        figure {
+          img {
+            width: 80px;
+            height: 80px;
+          }
+        }
+        .text_mijozlar {
+          max-width: 200px;
+          p {
+            margin-bottom: 20px;
+          }
+        }
+      }
+    }
+  }
+  .contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 1200px 0px 10px;
+    padding: 0px 0px 0px 50px;
+    h2 {
+      font-size: 40px;
+      margin-bottom: 10px;
+    }
+    p {
+      font-size: 20px;
+    }
+    .form_contact {
+      padding: 0px 55px 0px 0px;
+      .form_top {
+        gap: 20px;
+        flex-direction: column;
+      }
+      .form_middle {
+        flex-direction: column;
+      }
+      .form_bottom {
+        flex-direction: column;
+        .data_start {
+          display: flex;
+          flex-direction: column;
+          gap: 6px;
+          input {
+            padding: 6px 12px;
+            width: 290px;
+          }
+        }
+        .data_end {
+          display: flex;
+          flex-direction: column;
+          gap: 6px;
+          input {
+            padding: 6px 12px;
+            width: 260px;
+          }
+        }
+      }
+    }
+    button {
+      margin-bottom: 30px;
+    }
+    .form_chekbox {
+      input {
+        width: 15px;
+        height: 15px;
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  #root {
+    width: auto !important;
+  }
+  .nav {
+    width: 100% !important;
+  }
+  .main_section {
+    width: 100% !important;
+    margin: 0;
+    padding: 0;
+  }
+  .main_text {
+    text-align: center;
+  }
+  .main_text h1 {
+    margin: 35px !important;
+    font-size: 25px !important;
+  }
+  .main_text p {
+    display: none;
+  }
+  .our_mission img,
+  .contact img {
+    width: 100% !important;
+  }
+  .our_memberships{
+    height: auto;
+  }
+  .our_memberships ul li{
+    display: none;
+  }
+  .everything h2, .mijozlarimizdan h2 {
+    font-size: 30px;
+
+  }
+  .mijozlarimizdan h2{
+    margin: 50px 12px;
+  }
+  .content_mijoz{
+    font-size: 10px !important;
+    width: auto !important; 
+    height: auto !important;
+  }
+  .contact{
+    margin: 0 !important;
+    /* text-align: center !important; */
+  }
+  .contact img {
+    display: none;
+  }
+  .contact input {
+    width: 100% !important;
+
+    text-align: left;
+  }
+
+
+}
